@@ -8,7 +8,7 @@ const App = () => {
 
   const claimCoupon = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/claim-coupon');
+      const response = await axios.get('https://couponapp-backend.onrender.com/claim-coupon');
       setMessage(response.data.message);
       setCoupon(response.data.coupon_code);
     } catch (error) {
